@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Mono:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body-index {
+    background-color: #1C2120;
+    background-size: cover;
+}
+
+.login a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #1C2120;
+    padding: 8px 0;
+}
+
+.login a:hover {
+    border-bottom: 3px solid #1C2120;
+}
+
+.login {
+    text-align: right;
+    padding: 30px;
+}
+
+.navi {
+    background-color: #ffde59fe;
+    transition: background-color 0.3s, transform 0.3s;
+    transform: translateY(0);
+}
+
+.sos {
+    height: 10vh;
+    position: absolute;
+    padding: 3px 5px 3px 15px;
+}
+
+.logo-gif {
+    height: 90vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+.sgin{
+    background-image: url('SRC/LOGO.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.sgin1{
+    width: 320px;
+    height: 480px;
+    background: rgba(245, 240, 240, 0.797);
+    color: white;
+    border-radius: 5%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 40px;
+}
+.log{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    color: #1C2120;
+    font-family: 'Roboto Mono', monospace;
+}
+.sgin1 p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    color: #1C2120
+}
+.sgin1 input{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #1C2120;
+    color: white;
+    height: 30px;
+}
+.sgin1 input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+.sgin1 input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.sgin1 input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffde56fe;
+    color: black;
+}
+.sgin1 .ab{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(24, 23, 23);
+    font-family: 'Roboto Mono', monospace;
+}
+.sgin1 .ab:hover{
+    color: #ffde56fe;
+}
+
+.footer-index {
+    background-color: #ffde56fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-index a{
+    margin-bottom: 10px;
+    padding: 15px 30px 10px 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.footer-index a:hover {
+    border-bottom: 3px solid #1C2120;
+}
+
+.option {
+    background-image: url('SRC/bg-option.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.bg-option {
+    background: #ffffffc5;
+    margin-left: 65%;
+    height: 100vh;
+}
+
+.option-sos {
+    height: 150px;
+    width: 150px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kascents {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #1C2120;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.click {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #1C2120;
+    text-align: center;
+}
+
+.bg-option input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 80%;
+    background: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform .2s;
+}
+
+.bg-option input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffde56fe;
+    color: black;
+    transform: scale(1.05);
+}
+
+.features {
+    background-image: url('SRC/bg.png');
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8vh;
+}
+
+.features .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 35% 20px 35%;
+    border-radius: 20px;
+    background-color: #1C2120;
+    padding: 20px;
+    transition: transform .2s;
+}
+
+.features .feature:hover {
+    transform: scale(1.05);
+}
+
+.features .feature img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+
+.features .feature p {
+    margin: 0;
+    color: #ffde56fe;
+    font-family: 'Montserrat', sans-serif;
+}
