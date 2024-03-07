@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>InScents Sales</title>
+        <link rel="stylesheet" href="CSS/user-sales.css">
+        <script src="https://kit.fontawesome.com/7783766cef.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="header-dashboard-user">
+            <div class="nav">
+                <img src="CSS/SRC/LOGO-TRANSPA.png" alt="logo" class="logo">
+                <a href="main.html" class="nava" style="text-decoration: none;">
+                    <p class="nav-tabs">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        Dashboard
+                    <hr class="hr">
+                    </p>
+                </a>
+                <a href="sales.html" class="nava" style="text-decoration: none;">
+                    <p class="nav-tabs">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Sales
+                    <hr class="hr">
+                    </p>
+                </a>
+                <a href="products.html" class="nava" style="text-decoration: none;">
+                    <p class="nav-tabs">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Products
+                    <hr class="hr">
+                    </p>
+                </a>
+                <a href="inventory.html" class="nava" style="text-decoration: none;">
+                    <p class="nav-tabs">
+                    <i class="fa-solid fa-box-archive"></i>
+                    Inventory
+                    <hr class="hr">
+                    </p>
+                </a>
+                <a href="user-report.html" class="nava" style="text-decoration: none;">
+                    <p class="nav-tabs">
+                    <i class="fa-solid fa-file-zipper"></i>
+                    Reports
+                    <hr class="hr">
+                    </p>
+                </a>
+                <a href="../index.html" class="nava" style="text-decoration: none;">
+                    <p class="nav-tabs1">
+                        <i class="fa-solid fa-power-off"></i>
+                    Log-out
+                    </p>
+                </a>
+            </div>
+        </div>
+            <div class="sale-tab">
+                <p>Sales</p>
+                <hr>
+                <button class="icon-button1 update-icon1" onclick="openAddModal(1)"><i class="fa-solid fa-plus"></i>   Add</button>
+                <table id="salesTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">Product Name<i class="fas fa-sort"></i></th>
+                            <th onclick="sortTable(2)">Category<i class="fas fa-sort"></i></th>
+                            <th onclick="sortTable(5)">Date<i class="fas fa-sort"></i></th>
+                            <th>Price</th>
+                            <th>Quantity Sold</th>
+                            <th>Sale Made</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Product 1</td>
+                            <td>Electronics</td>
+                            <td>2023-10-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>Computers</td>
+                            <td>2023-11-01</td>
+                            <td>459</td>
+                            <td>100</td>
+                            <td><span class="total">45900</span></td>
+                            <td>
+                                <button class="icon-button delete-icon" onclick="openConfirmDeleteModal(1)"><i class="fa-solid fa-trash fa-2x"></i></button>
+                                <button class="icon-button update-icon" onclick="openUpdateModal(1)"><i class="fa-solid fa-pen-to-square fa-2x"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="addModal" class="update-modal">
+                <span class="icon-button" onclick="closeAddModal()" style="position: absolute; top: 10px; right: 10px; font-size: 20px; cursor: pointer;">&times;</span>
+                <p>Add Sales</p>
+                <form>
+                   <label for="addProduct">Product Name:</label>
+                   <select name="products" id="addProduct">
+                    <option value="Product 1">Product 1</option>
+                    <option value="Product 2">Product 2</option>
+                    <option value="Product 3">Product 3</option>
+                    <option value="Product 4">Product 4</option>
+                    <option value="Product 5">Product 5</option>
+                   </select>
+                    <br>
+                    <label for="addCategory">Category:</label>
+                   <select name="category" id="addCategory">
+                    <option value="Category 1">Category 1</option>
+                    <option value="Category 2">Category 2</option>
+                    <option value="Category 3">Category 3</option>
+                    <option value="Category 4">Category 4</option>
+                    <option value="Category 5">Category 5</option>
+                   </select>
+                    <br>
+                    <label for="addQuantity">New Quantity:</label>
+                    <input type="number" id="addQuantity">
+                    <br>
+                    <label for="addDate">Date:</label>
+                    <input type="date" id="addDate">
+                    <br>
+                    <button type="button" onclick="addSales()">Add</button>
+                </form>
+            </div>
+            <div id="updateModal" class="update-modal">
+                <span class="icon-button" onclick="closeUpdateModal()" style="position: absolute; top: 10px; right: 10px; font-size: 20px; cursor: pointer;">&times;</span>
+                <p>Update Sales</p>
+                <form>
+                   <label for="newProduct">Product Name:</label>
+                   <select name="products" id="newProduct">
+                    <option value="Product 1">Product 1</option>
+                    <option value="Product 2">Product 2</option>
+                    <option value="Product 3">Product 3</option>
+                    <option value="Product 4">Product 4</option>
+                    <option value="Product 5">Product 5</option>
+                   </select>
+                    <br>
+                    <label for="newCategory">Category:</label>
+                   <select name="category" id="newCategory">
+                    <option value="Category 1">Category 1</option>
+                    <option value="Category 2">Category 2</option>
+                    <option value="Category 3">Category 3</option>
+                    <option value="Category 4">Category 4</option>
+                    <option value="Category 5">Category 5</option>
+                   </select>
+                    <br>
+                    <label for="newQuantity">New Quantity:</label>
+                    <input type="number" id="newQuantity">
+                    <br>
+                    <label for="newDate">Date:</label>
+                    <input type="date" id="newDate">
+                    <br>
+                    <button type="button" onclick="updateProduct()">Update</button>
+                </form>
+            </div>
+            <div id="confirmDeleteModal" class="confirm-delete-modal">
+                <div class="confirm-delete-modal-content">
+                    <p>Are you sure you want to delete this sale?</p>
+                    <button class="delete" onclick="deleteProduct()">Yes</button>
+                    <button class="cancel" onclick="cancelDelete()">No</button>
+                </div>
+            </div>        
+
+            </div>
+        </div>  
+
+        <script>
+            function calculateTotal(productId) {
+                const quantityInput = document.querySelector(`#salesTable tbody tr:nth-child(${productId}) .quantity`);
+                const totalSpan = document.querySelector(`#salesTable tbody tr:nth-child(${productId}) .total`);
+                const price = parseFloat(quantityInput.value) * parseFloat(priceList[productId - 1]);
+                totalSpan.textContent = `$${price.toFixed(2)}`;
+            }
+            
+            function openAddModal(productId) {
+                // Display the floating modal for updating the product.
+                const modal = document.getElementById('addModal');
+                modal.style.display = 'block';
+                // You can also pre-fill the modal fields with existing data if needed.
+            }
+    
+            function closeAddModal() {
+                // Close the floating modal for updating the product.
+                const modal = document.getElementById('addModal');
+                modal.style.display = 'none';
+            }
+
+            function openUpdateModal(productId) {
+                // Display the floating modal for updating the product.
+                const modal = document.getElementById('updateModal');
+                modal.style.display = 'block';
+                // You can also pre-fill the modal fields with existing data if needed.
+            }
+    
+            function closeUpdateModal() {
+                // Close the floating modal for updating the product.
+                const modal = document.getElementById('updateModal');
+                modal.style.display = 'none';
+            }
+    
+            function openConfirmDeleteModal(productId) {
+                // Display the confirmation modal before deleting.
+                const confirmDeleteModal = document.getElementById('confirmDeleteModal');
+                confirmDeleteModal.style.display = 'block';
+                confirmDeleteModal.productId = productId;
+            }
+    
+            function deleteProduct() {
+                // Retrieve the productId from the confirmation modal.
+                const productId = document.getElementById('confirmDeleteModal').productId;
+    
+                // Implement the logic to delete the product here.
+                // For example, remove the entire row from the table.
+                const row = document.querySelector(`#salesTable tbody tr:nth-child(${productId})`);
+                row.remove();
+    
+                // Close the confirmation modal.
+                const confirmDeleteModal = document.getElementById('confirmDeleteModal');
+                confirmDeleteModal.style.display = 'none';
+            }
+    
+            function cancelDelete() {
+                // Close the confirmation modal without deleting.
+                const confirmDeleteModal = document.getElementById('confirmDeleteModal');
+                confirmDeleteModal.style.display = 'none';
+            }
+    
+            function updateProduct() {
+                // Implement the logic to update the product here.
+                // You can retrieve the new quantity from the modal input field.
+                const newQuantity = document.getElementById('newQuantity').value;
+                // Close the floating modal after updating.
+                closeUpdateModal();
+            }
+    
+            // Sort the table by column index
+            function sortTable(columnIndex) {
+                const table = document.getElementById('salesTable');
+                const rows = Array.from(table.getElementsByTagName('tr'));
+                const headerRow = rows.shift(); // Remove header row
+                const isNumeric = columnIndex === 3 || columnIndex === 4;
+    
+                rows.sort((a, b) => {
+                    const aValue = a.getElementsByTagName('td')[columnIndex].textContent.trim();
+                    const bValue = b.getElementsByTagName('td')[columnIndex].textContent.trim();
+                    return isNumeric ? parseFloat(aValue) - parseFloat(bValue) : aValue.localeCompare(bValue);
+                });
+    
+                // Re-add the header row and sorted rows to the table
+                rows.unshift(headerRow);
+                rows.forEach(row => table.tBodies[0].appendChild(row));
+            }
+    
+            const priceList = [20.00]; // Add more prices as needed
+        </script>
+
+    </body>
+</html>
