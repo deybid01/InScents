@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(222, 222, 222);
+}
+
+.nav {
+    background-color: #1C2120;
+    background-size:cover;
+    height: 96vh;
+    width: 14.9%;
+    padding: 0 10px 0 10px;
+    margin: 0px 0px 0px 15px;
+    border-radius: 15px;
+    position: fixed;
+    box-shadow: 0px 0px 30px 0px #1C2120;
+}
+
+.img-dash {
+    height: 20px;
+    padding-right: 5px;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nava {
+    text-decoration: none;
+}
+
+.nav-tabs {
+    text-align: left;
+    padding: 20px 25px 20px 25px;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Archivo Black', sans-serif;*/
+    font-size: 20px;
+    transition: transform .2s;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.hr {
+    margin: 0 20px 0 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-tabs:hover {
+    transform: scale(1.05);
+    /*background-color: #ffde56fe;*/
+    background-color: white;
+    color: #1C2120;
+    margin: 0 13px 0 13px;
+    border-radius: 15px;
+}
+
+
+.nav-tabs1 {
+    text-align: left;
+    padding: 20px 25px 20px 25px;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Archivo Black', sans-serif;*/
+    font-size: 20px;
+    transition: transform .2s;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-tabs1:hover {
+    transform: scale(1.05);
+    /*background-color: #ffde56fe;*/
+    background-color: white;
+    color: red;
+    margin: 0 13px 0 13px;
+    border-radius: 15px;
+}
+
+.sale-tab {
+    background-color: #1C2120;
+    width: 1220px;
+    margin-left: 18.7%;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0px 0px 30px 0px #1C2120;
+}
+
+.sale-tab p {
+    color: aliceblue;
+    display: flex;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+th {
+    background-color: #FFC619;
+    color: #000000;
+    cursor: pointer;
+}
+
+th i {
+    margin-left: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.delete-icon {
+    color: #dc3545;
+}
+
+.update-icon {
+    color: #007BFF;
+}
+
+.icon-button1 {
+    background-color: #FFC619;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.update-icon1 {
+    color: #080000;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Floating Update Modal */
+.update-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #1C2120;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 15px;
+}
+
+.update-modal p {
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+
+.update-modal label {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 10px;
+}
+
+.update-modal select, input {
+    height: 25px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.update-modal button {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    height: 30px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.update-modal button:hover {
+    background-color: #FFC619;
+}
+/* Confirm Delete Modal */
+.confirm-delete-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.confirm-delete-modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.confirm-delete-modal-content p {
+    color: #080000;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.confirm-delete-modal-content button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.confirm-delete-modal-content button.cancel {
+    background-color: #007BFF;
+}
+
+.confirm-delete-modal-content .delete:hover {
+    background-color: #a72432;
+}
+
+.confirm-delete-modal-content .cancel:hover {
+    background-color: #0051a7;
+}
+
