@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(222, 222, 222);
+}
+
+.nav {
+    background-color: #1C2120;
+    background-size:cover;
+    height: 96vh;
+    width: 14.9%;
+    padding: 0 10px 0 10px;
+    margin: 15px 0px 0px 15px;
+    border-radius: 15px;
+    position: fixed;
+    box-shadow: 0px 0px 30px 0px #1C2120;
+}
+
+.img-dash {
+    height: 20px;
+    padding-right: 5px;
+}
+
+.logo {
+    height: 22vh;
+    width: 22vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nava {
+    text-decoration: none;
+}
+
+.nav-tabs {
+    text-align: left;
+    padding: 20px 25px 20px 25px;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Archivo Black', sans-serif;*/
+    font-size: 20px;
+    transition: transform .2s;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.hr {
+    margin: 0 20px 0 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-tabs:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color: #1C2120;
+    margin: 0 13px 0 13px;
+    border-radius: 15px;
+}
+
+
+.nav-tabs1 {
+    text-align: left;
+    padding: 20px 25px 20px 25px;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Archivo Black', sans-serif;*/
+    font-size: 20px;
+    transition: transform .2s;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-tabs1:hover {
+    transform: scale(1.05);
+    /*background-color: #ffde56fe;*/
+    background-color: white;
+    color: red;
+    margin: 0 13px 0 13px;
+    border-radius: 15px;
+}
+
+.main-tab {
+    margin-left: 18.7%;
+    max-width: 187vh;
+    display: flex;
+}
+
+.tabs {
+    color: #1C2120;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-top: 70px;
+    box-shadow: 0px 0px 30px 0px #1C2120;
+    border-style: solid;
+    border-color: #1C2120;
+    border-width: 15px 15px;
+}
+
+.main-tab .title{
+    font-size: 40px;
+}
+
+.main-tab .num{
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.top-sell {
+    background-color: #1C2120;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px #1C2120;
+}
+.top-sell p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: -65px;
+    width: 150px;
+}
+
+.dropdown .drpbtn {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: #1C2120;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.pics {
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 20px;
+}
+
+.column {
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.img2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 130px;
+    border-radius: 15px;
+    transition: transform .2s;
+}
+
+.img2:hover {
+    transform: scale(1.05);
+}
+
+.column p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.column span {
+    color: #FFC619;
+    font-size: 13px;
+}
+
+.records {
+    background-color: #1C2120;
+    margin: 20px 20px 0 20px;
+    width: 900px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px #1C2120;
+}
+
+.records .title {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+table, th, td {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px 35px 10px 35px;
+    color: white;
+    margin: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: #FFC619;
+    color: #1C2120;
+    border: 1px solid #FFC619;
+}
+
+td:nth-child(even) {
+    color:#FFC619;
+}
+
+.sale {
+    background-color: #1C2120;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px #1C2120;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.sale p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sale img {
+    margin-top: 20px;
+    height: 34.7vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.performance {
+    background-color: #1C2120;
+    margin-top: 30px;
+    width: 750px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px #1C2120;
+}
+
+.performance p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.performance img {
+    margin-top: 20px;
+    height: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
